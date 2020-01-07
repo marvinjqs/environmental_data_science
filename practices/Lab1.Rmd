@@ -1,0 +1,40 @@
+---
+title: "EJEMPLO APLICATIVO 01"
+subtitle: Introduccion a la ciencia de datos 
+date: "3 de marzo de 2019"
+output: pdf_document
+documentclass: extarticle
+fontsize: 12pt
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, fig.pos = 'h')
+```
+
+## Análisis de la concentración de CO~2~
+
+El dióxido de carbono (CO~2~) es uno de los principales Gases de Efecto Invernadero (GEI) junto con el metano (CH~4~) y el óxido nitroso (N~2~O). Según la IPCC (2014)[^1], la emisión continua de gases de efecto invernadero causará un mayor calentamiento y cambios duraderos en todos los componentes del sistema climático. 
+
+Para una investigación sobre el cambio climático, se requiere utilizar los datos de concentración de dióxido de carbono (CO~2~) del observatorio de Mauna Loa[^2] en Hawai, monitoreados y publicados por la *National Oceanic and Atmospheric Administration* (NOAA). Usando sus conocimientos en R, descargue y analice los datos de (CO~2~).
+
+```{r pressure, echo=FALSE, fig.cap="Observatorio Mauna Loa, Hawai" ,out.width = '40%',fig.align = 'center'}
+
+knitr::include_graphics("figures/maunaloa.jpg")
+
+```
+## Ejercicios :
+
+1. Importar el archivo de *datos medios mensuales* de (CO~2~).
+2. Debido a que no necesitamos toda la información, reduzca el dataframe a las *5 primeras columnas*.
+3. Poner nombre a todas las columnas.
+4. ¿Está completa la información? ¿Cuántos datos faltan?.
+5. ¿Cuál es la clase de los objetos de cada columna?.
+6. Para analizar de manera eficiente los datos a lo largo del tiempo, convertir las columnas de año y mes a la clase *Date* (fecha).
+7. Hallar el mes con mayor y menor concetración media de CO~2~.
+8. Graficar la concentración media mensual de CO~2~ a lo largo del tiempo (con su respectiva linea de tendencia) y la concentración media mensual de CO~2~ en el año 2018.
+
+
+[^1]: https://www.ipcc.ch/site/assets/uploads/2018/02/SYR_AR5_FINAL_full_es.pdf
+[^2]: https://www.esrl.noaa.gov/gmd/ccgg/trends/data.html
+
+
