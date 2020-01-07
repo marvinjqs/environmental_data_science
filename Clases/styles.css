@@ -1,0 +1,63 @@
+
+h2 { /* Header 2 */
+    font-family: Helvetica ;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    color: DarkSlateGrey;
+}
+
+h3 { /* Header 3 */
+    font-family: Helvetica;   
+    font-size: 17px;
+    font-weight: bold;
+    color: black
+}
+
+h4 { /* Header 4 */
+    font-family: Cambria;   
+    font-size: 22px;
+    color: black
+}
+
+p { /* Normal */
+    font-family: Cambria;
+    font-size: 25px;
+    text-align: justify;
+    color: black
+}
+
+pre { /* Code block */
+
+  font-family: Ubuntu ;
+  color: DarkSlateGrey ;
+  font-size: 20px;
+  white-space: pre;
+  overflow-x: scroll;
+  overflow-y: scroll;
+  Word-break: keep-all;
+  
+ }
+
+
+.gdbar img {
+  width: 700px;
+  height: 700px;
+  margin: 800px 800px;
+}
+
+.gdbar {
+  width: 800px;
+  height: 800px;
+}
+
+slides > slide:not(.nobackground):before {
+  width: 10px;
+  height: 75px;
+  position:absolute;
+  top: 588px;
+  left: 795px;
+  background-size: 50px 50px;
+}
+
+
