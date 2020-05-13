@@ -1,4 +1,4 @@
-# Environmental_DataScience
+
 ### CIENCIA DE DATOS AMBIENTALES CON R
 
 Marvin J. Quispe Sedano
